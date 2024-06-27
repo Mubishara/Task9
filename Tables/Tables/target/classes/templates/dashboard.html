@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2>Table 1 Data</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Data</th>
+        </tr>
+        <tr th:each="row : ${table1Data}">
+            <td th:text="${row.id}"></td>
+            <td th:text="${row.data}"></td>
+        </tr>
+    </table>
+
+    <h2>Table 2 Data</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Data</th>
+        </tr>
+        <tr th:each="row : ${table2Data}">
+            <td th:text="${row.id}"></td>
+            <td th:text="${row.data}"></td>
+        </tr>
+    </table>
+
+    <h2>Table 3 (Merged) Data</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Data</th>
+        </tr>
+        <tr th:each="row : ${table3Data}">
+            <td th:text="${row.id}"></td>
+            <td th:text="${row.data}"></td>
+        </tr>
+    </table>
+
+    <form action="/merge" method="post">
+        <button type="submit">Merge Tables</button>
+    </form>
+</body>
+</html>
