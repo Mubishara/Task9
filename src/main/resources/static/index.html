@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Store Name</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header .logo {
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('banner.jpg'); /* Replace with your banner image */
+            background-size: cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .categories, .new-arrivals, .best-sellers {
+            padding: 20px;
+            text-align: center;
+        }
+        .categories h2, .new-arrivals h2, .best-sellers h2 {
+            margin-bottom: 20px;
+        }
+        .categories .category, .new-arrivals .product, .best-sellers .product {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .categories img, .new-arrivals img, .best-sellers img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Ecommerce Website</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            
+            <a href="cart.html">Products/Cart</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Your Store</h1>
+        <p>Summer Sale - Up to 50% Off!</p>
+        <a href="cart.html" class="btn">Shop Now</a>
+    </section>
+
+    
+</body>
+</html>
